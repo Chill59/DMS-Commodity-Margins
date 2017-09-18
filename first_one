@@ -3,3 +3,9 @@ import numpy as np
 from numpy.linalg import inv, qr
 import fnmatch
 import re
+
+location = raw_input("Target region? (input one region code of choice) > ")
+loc_lst = location.split()
+year_lst = [2012]
+pcat = ['PURCHASER']
+scan_FD = pd.read_sas('fnd.sas7bdat')
